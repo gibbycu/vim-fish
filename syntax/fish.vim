@@ -12,7 +12,7 @@ if !exists("main_syntax")
 endif
 
 
-syntax region fishVariable1 start=+$+ end=+ + keepend
+syntax region fishVariable1 start=+\$+ end=+ + keepend
 syntax region fishVariable2 start=+_+ end=+ + keepend
 syntax match  fishComment ";.*$"
 syntax region fishString start=+'+ end=+'+ keepend
