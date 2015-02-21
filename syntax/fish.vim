@@ -14,7 +14,7 @@ endif
 
 syntax region fishVariable1 start=+$+ end=+ + keepend
 syntax region fishVariable2 start=+_+ end=+ + keepend
-syntax region fishComment start=+;+ end=+$+ keepend
+syntax match  fishComment ";.*$"
 syntax region fishString start=+'+ end=+'+ keepend
 syntax keyword fishConditional if else end_if then case section caseof case_of end_case end_section endcase endif
 syntax keyword fishRepeat loop end_loop while section command endcommand end_command endloop
