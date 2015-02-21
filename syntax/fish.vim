@@ -12,6 +12,8 @@ if !exists("main_syntax")
 endif
 
 
+syntax region fishVariable1 start=+$+ end=+ + keepend
+syntax region fishVariable2 start=+_+ end=+ + keepend
 syntax region fishComment start=+;+ end=+$+ keepend
 syntax region fishString start=+'+ end=+'+ keepend
 syntax keyword fishConditional if else end_if then case section caseof case_of end_case end_section endcase endif
@@ -31,3 +33,5 @@ hi link fishWords1 Special
 hi link fishWords2 Special
 hi link fishWords3 Special
 hi link fishWords4 Special
+hi link fishVariable1 Identifier
+hi link fishVariable2 Identifier
