@@ -8,7 +8,8 @@ if !exists("main_syntax")
     elseif exists("b:current_syntax")
         finish
     endif
-    let main_syntax = 'fish'
+    let b:current_syntax = 'fish'
+    " let main_syntax = 'fish'
 endif
 
 

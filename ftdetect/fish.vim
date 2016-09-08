@@ -1,4 +1,2 @@
-au BufNewFile,BufRead *.fis setf fish
-au BufNewFile,BufRead *.flac setf fish
-
-setlocal commentstring=;%s
+au BufNewFile,BufRead,BufEnter *.fis setf fish
+au BufNewFile,BufRead,BufEnter *.flac setf fish
